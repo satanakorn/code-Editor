@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="clear">Clear All</button>
+            <button id="reset">Reset</button>
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        </div>
+        <div class="editor-container">
+            <div class="input">
+                <label for="html">HTML</label>
+                <textarea id="html" onkeyup="display_result()"></textarea>
+
+                <label for="css">CSS</label>
+                <textarea id="css" onkeyup="display_result()"></textarea>
+
+                <label for="js">JAVASCRIPT</label>
+                <textarea id="js" onkeyup="display_result()"></textarea>
+            </div>
+
+            <div class="output">
+                <label for="result">Result</label>
+                <iframe src="" id="result"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
